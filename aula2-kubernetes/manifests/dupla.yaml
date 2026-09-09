@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: aula02
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sentiment-api
+  namespace: aula02
+  labels:
+    app: sentiment-api
+    dupla: GustavoRost-Lucca
+spec:
+  containers:
+    - name: api
+      image: ghcr.io/rodolfo-s-antunes/sentiment-api:v2
+      ports:
+        - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: load-balancer
+  namespace: aula02
+spec:
+  type: LoadBalancer
+  selector:
+    app: sentiment-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
