@@ -10,7 +10,7 @@ metadata:
   namespace: dupla-gustavorostlucca
   labels:
     app: sentiment-api
-    dupla: GustavoRost-Lucca
+    dupla: gustavorost-lucca
 spec:
   containers:
     - name: api
@@ -26,7 +26,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: sentiment-api
+    dupla: gustavorost-lucca
   ports:
     - protocol: TCP
       port: 80
