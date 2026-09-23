@@ -11,13 +11,13 @@ variable "dupla" {
 variable "turma" {
   description = "Identificação da turma, usada nas tags."
   type        = string
-  default     = "2026-2"
+  default     = "GENAI"
 }
 
 variable "location" {
   description = "Região do Azure. brazilsouth é a região padrão da disciplina. Se o Azure recusar com RequestDisallowedByAzure, rode python3 check_azure.py na raiz do repositório e escolha outra."
   type        = string
-  default     = "brazilsouth"
+  default     = "canadacentral"
 }
 
 variable "imagem_tag" {
