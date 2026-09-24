@@ -8,3 +8,8 @@ dupla = "gustavolucca"
 
 # A prática começa em v2 e troca para v3 na etapa 3.
 imagem_tag = "v2"
+
+location = "canadacentral"
+
+node_vm_size = "Standard_B2ps_v2"
+node_count   = 1
