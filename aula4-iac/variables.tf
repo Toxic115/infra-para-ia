@@ -11,7 +11,7 @@ variable "dupla" {
 variable "turma" {
   description = "Identificação da turma, usada nas tags."
   type        = string
-  default     = "2026-2"
+  default     = "GENAI"
 }
 
 variable "location" {

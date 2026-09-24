@@ -11,7 +11,7 @@
 # Para desfazer: ./bootstrap-limpeza.sh
 set -euo pipefail
 
-LOCATION="brazilsouth"
+LOCATION="canadacentral"
 RG_ESTADO="tfstate-rg"
 REPO="infra-para-ia"
 GH_USER="${1:-}"
